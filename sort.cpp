@@ -1,17 +1,18 @@
 #include <iostream>
 #include <algorithm>  // for std::sort
+using namespace std;
 
 int main() {
-    int arr[] = {5, 2, 8, 3, 1};
+    int arr[] = {4,100,200,7,6,500,8};
     int n = sizeof(arr) / sizeof(arr[0]);  // calculate the size of the array
 
-    std::sort(arr, arr + n);  // sort the array using std::sort
+    sort(arr, arr + n);  // sort the array using std::sort
 
-    std::cout << "Sorted array: ";
+    cout << "Sorted array: ";
     for (int i = 0; i < n; i++) {
-        std::cout << arr[i] << " ";
+        cout << arr[i] << " ";
     }
-    std::cout << std::endl;
+    cout << std::endl;
 
     return 0;
 }
